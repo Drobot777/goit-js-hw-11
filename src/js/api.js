@@ -3,8 +3,8 @@ export {findImages};
 export {hidingBtnLoadMore};
 import axios from 'axios';
 import {Notify} from 'notiflix';
-import simpleLightbox from 'simplelightbox';
-import 'simplelightbox/dist/simple-lightbox.css';
+// import simpleLightbox from 'simplelightbox';
+// import 'simplelightbox/dist/simple-lightbox.css';
 import {nameImages} from './homwork11';
 import {galleryEl} from './homwork11';
 import {buttonEl} from './homwork11';
@@ -40,9 +40,9 @@ function createCards (arr) {
         downloads,
       }) => {
         return ` <div class="photo-card">
-    <a class="gallery__link" href="${largeImageURL}">
+   
     <img src="${webformatURL}" alt="${tags}" loading="lazy" width = "300" height="250"/>
-    </a>
+    
     <div class="info">
     <p class="info-item">
     <b>Likes</b>
@@ -65,12 +65,12 @@ function createCards (arr) {
       }
     )
     .join ('');
-  return galleryEl.insertAdjacentHTML ('beforeend', card),
-  new SimpleLightbox ('.gallery a', {
-    captionsData: 'alt',
-    captionsDelay: 250,
-    disableScroll: false,
-  }).refresh()
+  return galleryEl.insertAdjacentHTML ('beforeend', card)
+  // new SimpleLightbox ('.gallery a', {
+  //   captionsData: 'alt',
+  //   captionsDelay: 250,
+  //   disableScroll: false,
+  // }).refresh()
 }
 
 function hidingBtnLoadMore (total) {
