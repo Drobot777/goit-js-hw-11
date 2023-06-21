@@ -1,5 +1,4 @@
 export {createCards};
-export {createCard};
 export {findImages};
 export {hidingBtnLoadMore};
 import axios from 'axios';

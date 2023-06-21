@@ -1,7 +1,5 @@
-import axios from 'axios';
 import {Notify} from 'notiflix/build/notiflix-notify-aio';
 import {createCards} from './api';
-import {createCard} from './api';
 import {findImages} from './api';
 import {page, perPage} from './api';
 import {hidingBtnLoadMore} from './api';
