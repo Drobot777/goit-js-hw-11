@@ -70,7 +70,7 @@ function createCards (arr) {
     captionsData: 'alt',
     captionsDelay: 250,
     disableScroll: false,
-  });
+  }).refresh()
 }
 
 function hidingBtnLoadMore (total) {
